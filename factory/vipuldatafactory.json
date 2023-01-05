@@ -1,0 +1,9 @@
+{
+	"name": "vipuldatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "49c6e653-cb59-46e4-a7c1-75230674c6c4",
+		"tenantId": "b45e1bdd-f9ec-457e-bda2-586d07c86d1a"
+	}
+}
