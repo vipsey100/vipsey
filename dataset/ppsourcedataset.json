@@ -2,7 +2,7 @@
 	"name": "ppsourcedataset",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage1",
+			"referenceName": "AzureDataLakeStorage4",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
@@ -26,11 +26,11 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@dataset().dscontainer",
+					"value": "@dataset().dsinputdirectory",
 					"type": "Expression"
 				},
 				"fileSystem": {
-					"value": "@dataset().dsinputdirectory",
+					"value": "@dataset().dscontainer",
 					"type": "Expression"
 				}
 			},
