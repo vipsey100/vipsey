@@ -1,0 +1,44 @@
+{
+	"name": "ppsinkdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"dscontainer": {
+				"type": "string"
+			},
+			"dsdirectory": {
+				"type": "string"
+			},
+			"dsfile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().dsfile",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().dsdirectory",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().dscontainer",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
