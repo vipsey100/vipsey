@@ -53,15 +53,15 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"dsinputdirectory": {
-								"value": "@pipeline().parameters.ppcontainer",
-								"type": "Expression"
-							},
-							"dscontainer": {
 								"value": "@pipeline().parameters.ppinputdirectory",
 								"type": "Expression"
 							},
+							"dscontainer": {
+								"value": "@pipeline().parameters.ppcontainer",
+								"type": "Expression"
+							},
 							"dsfile": {
-								"value": "@pipeline().parameters.ppoutputdirectory",
+								"value": "@pipeline().parameters.ppinputdirectory",
 								"type": "Expression"
 							}
 						}
