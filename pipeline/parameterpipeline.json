@@ -50,13 +50,41 @@
 				"inputs": [
 					{
 						"referenceName": "ppsourcedataset",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"dsinputdirectory": {
+								"value": "@pipeline().parameters.ppcontainer",
+								"type": "Expression"
+							},
+							"dscontainer": {
+								"value": "@pipeline().parameters.ppinputdirectory",
+								"type": "Expression"
+							},
+							"dsfile": {
+								"value": "@pipeline().parameters.ppoutputdirectory",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "ppsinkdataset",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"dscontainer": {
+								"value": "@pipeline().parameters.ppcontainer",
+								"type": "Expression"
+							},
+							"dsdirectory": {
+								"value": "@pipeline().parameters.ppoutputdirectory",
+								"type": "Expression"
+							},
+							"dsfile": {
+								"value": "@pipeline().parameters.ppfilename",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
