@@ -1,0 +1,43 @@
+{
+	"name": "ppsourcedataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"dsinputdirectory": {
+				"type": "string"
+			},
+			"dscontainer": {
+				"type": "string"
+			},
+			"dsfile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().dsfile",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().dscontainer",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().dsinputdirectory",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
