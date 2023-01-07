@@ -1,0 +1,26 @@
+{
+	"name": "getmetaactivityds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage5",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "adwork/input",
+				"fileSystem": "container1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			}
+		]
+	}
+}
