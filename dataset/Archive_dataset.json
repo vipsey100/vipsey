@@ -1,10 +1,6 @@
 {
 	"name": "Archive_dataset",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage2",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

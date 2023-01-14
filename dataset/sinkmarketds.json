@@ -1,10 +1,6 @@
 {
 	"name": "sinkmarketds",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage6",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

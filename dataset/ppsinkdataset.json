@@ -1,10 +1,6 @@
 {
 	"name": "ppsinkdataset",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage4",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"dscontainer": {
 				"type": "string"

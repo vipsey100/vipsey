@@ -1,10 +1,6 @@
 {
 	"name": "source_ds",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage6",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"dsfile": {
 				"type": "string"

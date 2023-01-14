@@ -1,10 +1,6 @@
 {
 	"name": "sinkds",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage5",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"dsfile": {
 				"type": "string"

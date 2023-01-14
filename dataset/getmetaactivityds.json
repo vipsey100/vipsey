@@ -1,10 +1,6 @@
 {
 	"name": "getmetaactivityds",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage5",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

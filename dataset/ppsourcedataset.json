@@ -1,10 +1,6 @@
 {
 	"name": "ppsourcedataset",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage4",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"dsinputdirectory": {
 				"type": "string"
