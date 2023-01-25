@@ -8,6 +8,12 @@
 		"parameters": {
 			"dsfile": {
 				"type": "string"
+			},
+			"dsdirectory": {
+				"type": "string"
+			},
+			"dscontainer": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -19,13 +25,19 @@
 					"value": "@dataset().dsfile",
 					"type": "Expression"
 				},
-				"folderPath": "storage",
-				"fileSystem": "poc-project-container"
+				"folderPath": {
+					"value": "@dataset().dsdirectory",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().dscontainer",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": "\t",
 			"compressionCodec": "ZipDeflate",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
+			"firstRowAsHeader": false,
 			"quoteChar": "\""
 		},
 		"schema": [
